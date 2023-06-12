@@ -1,15 +1,13 @@
-import ComponenteUm from "./components/ComponenteUm";
-import ComponenteDois from "./components/ComponenteDois";
-import ComponenteTres from "./components/ComponenteTres";
-import ComponenteQuatro from "./components/ComponenteQuatro";
+
+import ComponenteQuatro from "./components/hospital";
 
 function app(){
     return(
         <div>
-            <ComponenteUm />
-            <ComponenteDois />
-            <ComponenteTres />
-            <ComponenteQuatro texto="Que fase tá  Coringão" />
+            <ComponenteQuatro atend="01" nome="José da Silva" espc="Geral" prio="Normal" local="Triagem"/>
+            <ComponenteQuatro atend="02" nome="Maria das Dores" espc="Ortopedia" prio="Urgência" local="Consultório B"/>
         </div>
     )
 }
+
+export default app
